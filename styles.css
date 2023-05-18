@@ -1,0 +1,1473 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight:300;
+}
+.dropdown-toggle{
+    margin-top: -7px;
+    color:#000;
+    transition:0.3s;
+   }
+@font-face{
+    font-family: "aquire";
+    src: url('fonts/AquireBold-8Ma60.otf') format("truetype");
+}
+@font-face {
+    font-family: "impact";
+    src: url('fonts/impact.ttf');
+}
+@font-face {
+    font-family: "nexa";
+    src: url('fonts/Nexa\ Bold.otf');
+}
+.logo-com{
+    object-fit: cover;
+    object-position: center;
+    width: 200px;
+    overflow: hidden;
+}
+#logo-com{
+    width: 100%;    
+}
+
+.section-1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 1em;
+    border-radius:5px;
+}
+.section-1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url('images/blue-back-headphone.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+    z-index: -1;
+ }
+.section-1 > div {
+    display: flex;
+    flex-direction: column;
+     align-items: start; 
+     justify-content: space-evenly;
+}
+.section-1 .heading{
+    display: flex;
+    flex-direction: column;
+}
+ .heading > h2{
+    /* font-size: 60px; */
+      color: #130D0B;
+      margin-bottom: -10px;
+}
+ .heading > h3{
+    /* font-size: 30px; */
+    color:#130D0B;
+    /* align-self: center; */
+}
+ .heading > h1{
+    /* font-size: 150px;
+    font-weight: bold; */
+    color: #fff;
+    font-family: "aquire", sans-serif;
+    
+}
+.descrip{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: end;
+    max-width:300px;
+    color: #fff;
+}
+ .descrip > h4{
+    font-size: 20px;
+ }
+.shop{
+    background: #fff;
+    font-weight: bold;
+    color:#0A0502;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+/* SECTION TWO */
+.section-2{
+    margin-top:1.5em;
+}
+.section-2 > div{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:"earphone watch laptop laptop";
+    grid-gap: 1em;
+    padding: 1em;
+    justify-content: space-between;
+}
+.earphone{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      padding: 1em;
+      border-radius: 5px;
+      grid-area: earphone;
+}
+.earphone::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url('images/earphone2.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+    z-index: -1;
+ }
+ .earphone:hover::before {
+    transform: scale(1.5);
+  }
+.watch{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      padding: 1em;
+      border-radius:5px;
+      grid-area: watch;
+}
+.watch::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url('images/iwatch.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+    z-index: -1;
+ }
+ .watch:hover::before {
+    transform: scale(1.5);
+  }
+.laptop{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 1em;
+    border-radius:5px;
+    grid-area: laptop;
+}
+.laptop::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url('images/macbook.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+    z-index: -1;
+ }
+ .laptop:hover::before {
+    transform: scale(1.5);
+  }
+.fir-word{
+    font-weight: 200;
+     color:#fff;
+     font-size: 14px;
+     margin-bottom: 10px;
+}
+.sec-word{
+    font-weight: bold;
+    color:#fff;
+    margin-bottom: 10px;
+}
+.device{
+    font-size:30px;
+    font-weight: bold;
+    color: #D0D7DF;
+    margin-bottom: 10px;
+}
+.browse{
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+    /* font-weight: bold; */
+    color:#ffffff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+    letter-spacing: 0.2em;
+}
+.browse:hover{
+    transform: scale(1.2);
+}
+
+/* SECTION THREE */
+.section-3{
+    margin-top:1em;
+}
+.section-3 > div{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:"game game vr speaker";
+    grid-gap: 1em;
+    padding: 1em;
+    justify-content: space-between;
+}
+.game{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 1em;
+    border-radius:5px;
+    grid-area:game;
+}
+.game::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url('images/gaming.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+    z-index: -1;
+ }
+ .game:hover::before {
+    transform: scale(1.5);
+  }
+.vr{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 1em;
+    border-radius:5px;
+    grid-area:vr;
+}
+.vr::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url('images/vr-back.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+    z-index: -1;
+ }
+ .vr:hover::before {
+    transform: scale(1.5);
+  }
+.speaker{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 1em;
+    border-radius:5px;
+    grid-area:speaker;
+}
+.speaker::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url('images/jbl-speaker.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+    z-index: -1;
+ }
+ .speaker:hover::before {
+    transform: scale(1.5);
+  }
+
+/* SECTION FOUR */
+.section-4{
+    margin-top: 3em;
+}
+.section-4 > div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 1em;
+    place-items: center;
+    padding: 1em;
+}
+.section-4 > div > div{
+    display: flex;
+    align-items: center;
+    gap:1em;
+}
+.fa-solid{
+    font-size:35px;
+    color:#341E62;
+}
+.head{
+    font-weight: bold;
+}
+
+/* SECTION FIVE */
+.section-5{
+    margin-top: 3em;
+}
+.section-5 > div{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-areas: "fine-smile oraimo sale";
+    /* justify-content: space-between; */
+    place-items: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 1em;
+}
+.section-5 img{
+    width:250px;
+    height:250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.fine-smile{
+    grid-area:fine-smile;
+}
+.oraimo{
+    grid-area:oraimo;
+}
+.fine-smile h2{
+    font-family:'aquire' ;
+    font-size: 70px;
+    letter-spacing: 0.1em;
+    /* font-weight: bold; */
+    color: #fff;
+    line-height: 1em;
+}
+.sale{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    grid-area:sale;
+}
+.sale > p:nth-child(2){
+    font-size:55px;
+    font-family:'nexa' ;
+}
+
+/* SECTION SIX */
+.section-6{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.section-6 h2{
+    text-align: center;
+    font-size: 30px;
+}
+.section-6 > div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap:1em;
+   place-items: center;
+}
+.section-6  img{
+    width:250px;
+    height:250px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid #F1B9FF;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+}
+.flip-card{
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px;
+}
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* text-align: center; */
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+/* .flip-card-front{
+    background-color: #bbb;
+    color:black;
+} */
+.flip-card-back{
+     
+    transform:rotateY(180deg);
+}
+.product-det{
+    display: flex;
+    justify-content: space-around;
+    max-width:230px;
+    
+}
+.price{
+    font-weight:bold;
+}
+
+/* SECTION SEVEN */
+.section-7{
+    margin-top: 3em;
+}
+.section-7 > div{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-areas: "happy-hour macbook mac-sale";
+    /* justify-content: space-between; */
+    place-items: center;
+    background-color: #070707;
+    color: #fff;
+    padding: 1em;
+}
+.section-7 img{
+    width:250px;
+    height:250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.section-7 > .macbook{
+    grid-area: macbook;
+}
+.section-7 > .happy-hours{
+    grid-area:happy-hour;
+}
+.happy-hours h2{
+    font-family:'aquire';
+    font-size: 80px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1em;
+}
+.mac-sale{
+    /* display: flex; */
+    flex-direction: column;
+    gap:10px;
+    grid-area: mac-sale;
+}
+.mac-sale > p:nth-child(2){
+    font-size:55px;
+    font-family: 'nexa';
+}
+
+/* SECTION EIGHT */
+.section-8{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.section-8 h2{
+    text-align: center;
+}
+.section-8 > div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    padding: 2em;
+    gap:1em;
+    place-items: center;
+    align-items: start;
+}
+.section-8 > div > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em
+}
+.section-8 > div > div > img{
+    width: 350px;
+    height:250px;
+    object-fit: cover;
+    border: 1px solid #F1B9FF;
+    border-radius:20px;
+}
+.section-8 .heading{
+    font-weight:bold;
+}
+
+/* SECTION NINE */
+.section-9 {
+    margin-top: 80px;
+}
+.section-9 > div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    place-items: center;
+    background-color:#D8D5D0 ;
+    padding: 1em;
+    transition: 0.4s;
+}
+.section-9 > div:hover{
+    background-color:#27153A;
+}
+.section-9 > div:hover img{
+    filter: invert(1);
+}
+.section-9 img{
+    width:80px;
+    height:80px; 
+}
+
+/* FOOTER */
+footer{
+    margin-top: 2em;
+}
+.row{
+    width: 88%;
+}
+footer > div{
+     padding: 1em;
+     color:#000;
+}
+footer .fire-gads{
+    display: grid;
+    grid-gap: 0.5em;
+}
+.fire-gads > p:nth-child(1){
+    font-family: 'aquire', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    color: #DC0202;
+    letter-spacing: 0.2em;
+}
+footer .icons{
+    display: flex;
+    gap:1em;
+    /* place-items: center; */
+}
+footer .fa-brands{
+    font-size: 25px;
+    color:#341E62;
+    transition: 0.3s;
+}
+footer .fa-brands:hover{
+    transform: scale(1.5) rotate(360deg);
+    color:#DC0202;
+}
+footer li{
+    list-style-type: none;
+}
+footer input{
+    border-radius: 10px;
+    padding: 0.5em;
+    border: 1px solid gray;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+}
+footer a:hover{
+    text-decoration: underline;
+     
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width:275px) and (max-width:319px){
+    .heading > h2{
+        font-size: 60px;
+          color: #130D0B;
+          margin-bottom: -10px;
+    }
+     .heading > h3{
+        color:#130D0B;
+    }
+     .heading > h1{
+        color: #fff;
+        font-family: "aquire", sans-serif;  
+    }
+    .navbar-nav{
+        gap:1em;
+     }
+    .descrip{
+        display: none;
+    }
+    .shop{
+        padding: 6px;
+        border-radius: 5px;
+        font-size:8px;
+    }
+    .section-2 > div{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"laptop laptop"
+        "watch earphone"
+        ;
+        grid-gap: 1em;
+        padding: 1em;
+        justify-content: space-between;
+    }
+    .fir-word{
+        font-weight: 200;
+         color:#fff;
+         font-size: 14px;
+         margin-bottom: 10px;
+    }
+    .sec-word{
+        font-weight: bold;
+        color:#fff;
+        margin-bottom: 10px;
+    }
+    .device{
+        font-size:18px;
+        font-weight: bold;
+        color: #D0D7DF;
+        margin-bottom: 10px;
+    }
+    .browse{
+        /* background: #fff; */
+        /* font-weight: bold; */
+        /* color:; */
+        text-decoration: none;
+        padding: 4px 6px;
+        border-radius: 8px;
+        transition: 0.3s;
+        font-size:11px;
+    }
+    .section-3 > div{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"game game"
+        "vr speaker";
+    }
+    .section-4 > div{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    }
+    .section-4 .head{
+        font-size:14px;
+    }
+    .section-4 p{
+        font-size:10px;
+    }
+    .section-4 .fa-solid{
+        font-size:20px;
+        color:#341E62;
+    }
+    .section-5 > div{
+        grid-template-columns: 1fr;
+        grid-template-areas: "fine-smile"
+        "oraimo"
+        "sale";
+    }
+    .section-6 > div{
+        grid-template-columns: 1fr 1fr;
+        grid-gap:0.3em;
+    }
+    .section-6 img{
+        width:110px;
+        height:110px;
+    }
+    .flip-card{
+        width: 110px;
+        height: 110px;   
+    }
+    .product-det{
+        max-width: 110px;
+        font-size:0.55em;
+    }
+    .section-7 > div{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-areas: "happy-hour"
+        "macbook"
+        "mac-sale";
+    }
+    .happy-hours h2{
+        font-size: 70px
+    }
+    .section-7 img{
+        height:180px;
+        width: 200px;
+    }
+    .section-8 > div{
+        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    }
+    .section-8 > div > div > img{
+        width: 200px;
+        height:160px;
+    }
+    .section-9 > div{
+        grid-template-columns: repeat(auto-fit, minmax(35px,1fr));
+    }
+    .section-9 img{
+        width:30px;
+        height:30px;
+    }
+    footer input{
+        border-radius: 10px;
+        padding: 0.5em;
+        border: 1px solid gray;
+        /* width:120px; */
+    }
+    
+    footer .icons{
+        display: flex;
+        gap:0.7em;
+        /* place-items: center; */
+    }
+    footer .fa-brands{
+        font-size: 15px;
+        color:#341E62;
+        transition: 0.3s;
+    }
+}
+@media screen and (min-width:320px) and (max-width:380px){
+    .heading > h2{
+        /* font-size: 60px; */
+          color: #130D0B;
+          margin-bottom: -10px;
+    }
+     .heading > h3{
+        color:#130D0B;
+    }
+     .heading > h1{
+        color: #fff;
+        font-family: "aquire", sans-serif;  
+    }
+    .navbar-nav{
+        gap:1em;
+     }
+    .descrip{
+        display: none;
+    }
+    .shop{
+        padding: 6px;
+        border-radius: 5px;
+        font-size:10px;
+    }
+    .section-2 > div{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"laptop laptop"
+        "watch earphone"
+        ;
+        grid-gap: 1em;
+        padding: 1em;
+        justify-content: space-between;
+    }
+    .fir-word{
+        font-weight: 200;
+         color:#fff;
+         font-size: 14px;
+         margin-bottom: 10px;
+    }
+    .sec-word{
+        font-weight: bold;
+        color:#fff;
+        margin-bottom: 10px;
+    }
+    .device{
+        font-size:18px;
+        font-weight: bold;
+        color: #D0D7DF;
+        margin-bottom: 10px;
+    }
+    .browse{
+        text-decoration: none;
+        padding: 4px 6px;
+        border-radius: 8px;
+        transition: 0.3s;
+        font-size:11px;
+    }
+    .section-3 > div{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"game game"
+        "vr speaker";
+    }
+    .section-4 > div{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    .section-4 .head{
+        font-size:14px;
+    }
+    .section-4 p{
+        font-size:10px;
+    }
+    .section-4 .fa-solid{
+        font-size:20px;
+        color:#341E62;
+    } 
+    .section-5 > div{
+        grid-template-columns: 1fr;
+        grid-template-areas: "fine-smile"
+        "oraimo"
+        "sale";
+    }
+    .section-6 > div{
+        grid-template-columns: 1fr 1fr;
+        grid-gap:0.3em;
+    }
+    .section-6 img{
+        width:130px;
+        height:130px;
+    }
+    .flip-card{
+        width: 130px;
+        height: 130px;   
+    }
+    .product-det{
+        max-width: 130px;
+        font-size:0.75em;
+    }
+    .section-7 > div{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-areas: "happy-hour"
+        "macbook"
+        "mac-sale";
+    }
+    .section-8 > div{
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    }
+    .section-8 > div > div > img{
+        width: 250px;
+        height:200px;
+    }
+    .section-9 > div{
+        grid-template-columns: repeat(auto-fit, minmax(35px,1fr));
+    }
+    .section-9 img{
+        width:35px;
+        height:35px;
+    }
+    footer input{
+        border-radius: 10px;
+        padding: 0.5em;
+        border: 1px solid gray;
+        /* width:120px; */
+    }
+}
+
+@media screen and (min-width:381px) and (max-width:440px){
+    .heading > h2{
+        /* font-size: 60px; */
+          color: #130D0B;
+          margin-bottom: -10px;
+    }
+     .heading > h3{
+        color:#130D0B;
+    }
+     .heading > h1{
+        color: #fff;
+        font-family: "aquire", sans-serif;  
+    }
+    .navbar-nav{
+        gap:1em;
+     }
+    .descrip{
+        display: none;
+    }
+    .shop{
+        padding: 6px;
+        border-radius: 5px;
+        font-size:10px;
+    }
+    .section-2 > div{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"laptop laptop"
+        "watch earphone"
+        ;
+        grid-gap: 1em;
+        padding: 1em;
+        justify-content: space-between;
+    }
+    .fir-word{
+        font-weight: 200;
+         color:#fff;
+         font-size: 14px;
+         margin-bottom: 10px;
+    }
+    .sec-word{
+        font-weight: bold;
+        color:#fff;
+        margin-bottom: 10px;
+    }
+    .device{
+        font-size:18px;
+        font-weight: bold;
+        color: #D0D7DF;
+        margin-bottom: 10px;
+    }
+    .browse{
+        /* background: #fff; */
+        /* font-weight: bold; */
+        /* color:; */
+        text-decoration: none;
+        padding: 4px 6px;
+        border-radius: 8px;
+        transition: 0.3s;
+        font-size:11px;
+    }
+    .section-3 > div{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"game game"
+        "vr speaker";
+    }
+    .section-4 > div{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .section-4 .head{
+        font-size:14px;
+    }
+    .section-4 p{
+        font-size:12px;
+    }
+    
+    .fa-solid{
+        font-size:25px;
+        color:#341E62;
+    }
+    .section-5 > div{
+        grid-template-columns: 1fr;
+        grid-template-areas: "fine-smile"
+        "oraimo"
+        "sale";
+        place-content: center;
+    }
+    .section-5 img{
+        width:300px;
+        height:300px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .fine-smile h2{
+        font-family:'aquire' ;
+        font-size: 70px;
+        letter-spacing: 0.2em;
+        /* font-weight: bold; */
+        color: #fff;
+        line-height: 1em;
+    }
+    .sale{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        grid-area:sale;
+    }
+    .sale > p:nth-child(2){
+        font-size:65px;
+    }
+    .section-6 > div{
+        grid-template-columns: 1fr 1fr;
+        grid-gap:0.8em;
+    }
+    .section-6 img{
+        width:165px;
+        height:165px;
+    }
+    .flip-card{
+        width: 165px;
+        height: 165px;   
+    }
+    .product-det{
+        max-width: 155px;
+        font-size:0.75em;
+    }
+    .section-7 > div{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-areas: "happy-hour"
+        "macbook"
+        "mac-sale";
+    }
+    .section-8 > div{
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    }
+    .section-8 > div > div > img{
+        width: 250px;
+        height:200px;
+    }
+    .section-9 > div{
+        grid-template-columns: repeat(auto-fit, minmax(35px,1fr));
+        text-align: center;
+    }
+    .section-9 img{
+        width:35px;
+        height:35px;
+    }
+     footer .icons{
+        gap:1em;
+     }
+}
+@media screen and (min-width:441px) and (max-width:520px){
+    .heading > h2{
+        /* font-size: 60px; */
+          color: #130D0B;
+          margin-bottom: -10px;
+    }
+     .heading > h3{
+        color:#130D0B;
+    }
+     .heading > h1{
+        color: #fff;
+        font-family: "aquire", sans-serif;  
+    }
+    .navbar-nav{
+        gap:1em;
+     }
+    .descrip{
+        display: none;
+    }
+    .shop{
+        padding: 6px;
+        border-radius: 5px;
+        font-size:10px;
+    }
+    .section-2 > div{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"laptop laptop"
+        "watch earphone"
+        ;
+        grid-gap: 1em;
+        padding: 1em;
+        justify-content: space-between;
+    }
+    .fir-word{
+        font-weight: 200;
+    }
+    .sec-word{
+        font-weight: bold;
+        color:#fff; 
+    }
+    .device{
+        font-size:18px;
+    }
+    .browse{
+        text-decoration: none;
+        padding: 4px;
+        border-radius: 8px;
+        transition: 0.3s;
+        font-size:12px;
+    }
+    .section-3 > div{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"game game"
+        "vr speaker";
+    }
+    .section-4 > div{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .section-4 .head{
+        font-size:14px;
+    }
+    .section-4 p{
+        font-size:14px;
+    }
+    .fa-solid{
+        font-size:25px;
+        color:#341E62;
+    }
+    .section-5 > div{
+        grid-template-columns: 1fr;
+        grid-template-areas: "fine-smile"
+        "oraimo"
+        "sale";
+    }
+    .section-6 > div{
+        grid-template-columns: 1fr 1fr;
+        grid-gap:0.8em;
+    }
+    .section-6 img{
+        width:190px;
+        height:190px;
+    }
+    .flip-card{
+        width: 190px;
+        height: 190px;   
+    }
+    .product-det{
+        max-width: 180px;
+        font-size:0.9em;
+    }
+    .section-7 > div{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-areas: "happy-hour"
+        "macbook"
+        "mac-sale";
+    }
+    .section-8 > div{
+        grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    }
+    .section-8 > div > div > img{
+        width: 350px;
+        height:300px;
+    }
+    .section-9 > div{
+        grid-template-columns: repeat(auto-fit, minmax(35px,1fr));
+        text-align: center;
+    }
+    .section-9 img{
+        width:35px;
+        height:35px;
+    }
+   
+}
+@media screen and (min-width:520px) and (max-width:600px){
+    .heading > h2{
+        /* font-size: 60px; */
+          color: #130D0B;
+          margin-bottom: -10px;
+    }
+     .heading > h3{
+        color:#130D0B;
+    }
+     .heading > h1{
+        color: #fff;
+        font-family: "aquire", sans-serif;  
+    }
+    .navbar-nav{
+        gap:1em;
+     }
+    .descrip{
+        display: none;
+    }
+    .shop{
+        padding: 6px;
+        border-radius: 5px;
+        font-size:10px;
+    }
+    .section-2 > div{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"laptop laptop"
+        "watch earphone"
+        ;
+        grid-gap: 1em;
+        padding: 1em;
+        justify-content: space-between;
+    }
+    .fir-word{
+        font-weight: 200;
+         color:#fff;
+         font-size: 10px;
+         margin-bottom: 10px;
+    }
+    .sec-word{
+        font-weight: bold;
+        color:#fff;
+        margin-bottom: 10px;
+    }
+    .device{
+        font-size:18px;
+        font-weight: bold;
+        color: #D0D7DF;
+        margin-bottom: 10px;
+    }
+    .browse{
+        text-decoration: none;
+        padding: 4px 10px;
+        border-radius: 8px;
+        transition: 0.3s;
+        font-size:12px;
+    }
+    .section-3 > div{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"game game"
+        "vr speaker";
+    }
+    .section-4 > div{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .fa-solid{
+        font-size:25px;
+        color:#341E62;
+    }
+    .section-5 > div{
+        grid-template-areas: "fine-smile"
+        "oraimo"
+        "sale";
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+        padding: 2em;
+    }
+    .section-6 > div{
+        grid-template-columns: 1fr 1fr;
+        grid-gap:0.8em;
+    }
+    .section-6 img{
+        width:230px;
+        height:230px;
+    }
+    .flip-card{
+        width: 230px;
+        height: 230px;   
+    }
+    .product-det{
+        max-width: 200px;
+        font-size:1em;
+    }
+    .section-7 > div{
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 1em;
+        padding: 2em;
+        grid-template-areas: "happy-hour"
+        "macbook"
+        "mac-sale";
+    }
+    .section-7 img{
+        width:400px;
+        height:400px;  
+    }
+    .section-7 > .macbook{
+        grid-area: macbook;
+    }
+    .section-7 > .happy-hours{
+        grid-area:happy-hour;
+    }
+    .happy-hours h2{
+        font-size: 90px;  
+    }
+    .mac-sale > p:nth-child(2){
+        font-size:70px;
+    }
+    .section-8 > div{
+        grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    }
+    .section-8 > div > div > img{
+        width: 220px;
+        height:180px;
+    }
+    .section-9 > div{
+        grid-template-columns: repeat(auto-fit, minmax(35px,1fr));
+        text-align: center;
+    }
+    .section-9 img{
+        width:35px;
+        height:35px;
+    }
+    
+}
+@media screen and (min-width:601px) and (max-width:680px) {
+    .section-2 > div{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"laptop laptop"
+        "watch earphone";
+    }
+    .navbar-nav{
+        gap:1em;
+     }
+    .device{
+        font-size:20px;
+    }
+    .browse{
+        padding: 4px 10px;
+        border-radius:8px;
+    }
+    .section-5 img{
+        width:200px;
+        height:200px;  
+    } 
+    .fine-smile h2{
+        font-size: 40px; 
+    }
+    .sale > p:nth-child(2){
+        font-size:40px;
+    }
+    .section-6 > div {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.8em;
+    }
+    .section-7 img{
+        width:190px;
+        height:190px;  
+    }
+    .happy-hours h2{
+        font-size: 45px;  
+    }
+    .mac-sale > p:nth-child(2){
+        font-size:45px;
+    }
+    .section-8 > div{
+        grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    }
+    .section-8 > div > div > img{
+        width: 220px;
+        height:180px;
+    }
+    .section-9 img{
+        width:35px;
+        height:35px;
+    }
+}
+@media screen and (min-width:681px) and (max-width:760px){
+    .browse{
+        font-size:10px;
+        border-radius: 8px;
+        padding: 4px;
+    }
+    .navbar-nav{
+        gap:1em;
+     }
+    .section-5 img{
+        width:200px;
+        height:200px;  
+    } 
+    .fine-smile h2{
+        font-size: 40px; 
+    }
+    .sale > p:nth-child(2){
+        font-size:40px;
+    }
+    .section-6 > div {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.8em;
+    }
+    .section-7 img{
+        width:190px;
+        height:190px;  
+    }
+    .happy-hours h2{
+        font-size: 45px;  
+    }
+    .mac-sale > p:nth-child(2){
+        font-size:45px;
+    }
+    .section-8 > div{
+        grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    }
+    .section-8 > div > div > img{
+        width: 220px;
+        height:180px;
+    }
+    .section-9 img{
+        width:35px;
+        height:35px;
+    }
+    
+}
+@media screen and (min-width:761px) and (max-width:820px) {
+    .browse{
+        font-size:12px;
+        border-radius: 8px;
+        padding: 4px 10px;
+    }
+    .navbar-nav{
+        gap:1em;
+     }
+    .section-5 img{
+        width:200px;
+        height:200px;  
+    } 
+    .fine-smile h2{
+        font-size: 40px; 
+    }
+    .sale > p:nth-child(2){
+        font-size:40px;
+    }
+    .section-6 > div {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0.8em;
+    }
+     
+    .section-6 img{
+        width:230px;
+        height:230px;
+    }
+    .flip-card{
+        width: 230px;
+        height: 230px;   
+    }
+    .product-det{
+        max-width: 230px;
+        font-size:1.1em;
+    }
+    .section-7 img{
+        width:250px;
+        height:250px;  
+    }
+    .happy-hours h2{
+        font-size: 60px;  
+    }
+    .mac-sale > p:nth-child(2){
+        font-size:60px;
+    }
+    .section-8 > div{
+        grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    }
+    .section-8 > div > div > img{
+        width: 220px;
+        height:180px;
+    }
+    .section-9 img{
+        width:50px;
+        height:50px;
+    }
+}
+
+#chatbot-chat{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: tomato;
+}
